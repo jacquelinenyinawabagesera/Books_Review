@@ -1,11 +1,4 @@
-@font-face{
-    font-family: poppins;
-    src:url(poppins/Poppins-Regular.ttf)
-}
 
-body{
-    font-family: poppins;
-}
 .borders{
     display:flex
 }
@@ -25,7 +18,7 @@ border-color: blue;
     height: 100px;
 }
 .introduction{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(shelf\ 2.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/shelf\ 2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 /* background-color: rgba(244,215,185,255); */
@@ -41,7 +34,7 @@ border-color: blue;
     }
     img{
         height:20vh;
-        width:20%
+        width:20%;
         margin-right:20%;
         /* transform: rotate(5deg); */
        
