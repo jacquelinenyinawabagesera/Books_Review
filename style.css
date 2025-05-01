@@ -98,9 +98,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background-repeat: no-repeat;
     padding: 0 10vw;
     position: relative;
     overflow: hidden;
+    background-size: cover;
 }
 
 .hero-content {
