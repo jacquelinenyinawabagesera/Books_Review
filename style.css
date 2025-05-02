@@ -134,8 +134,7 @@ body {
     display: flex;
     gap: 2vw;
 }
-
-.about-author-button {
+.explore-button{
     padding: 2vh 4vw;
     border: 2px solid #8db53d;
     border-radius: 50px;
