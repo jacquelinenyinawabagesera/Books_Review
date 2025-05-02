@@ -130,12 +130,12 @@ body {
     opacity: 0.8;
 }
 
-.cta-buttons {
+.about-author-button{
     display: flex;
     gap: 2vw;
 }
 
-.cta-button {
+.about-author-button {
     padding: 2vh 4vw;
     border: 2px solid #8db53d;
     border-radius: 50px;
@@ -147,7 +147,7 @@ body {
     letter-spacing: 1px;
 }
 
-.cta-button:hover {
+.explore-button:hover {
     background: #8db53d;
     color: #1a1a1a;
     transform: translateY(-5px);
@@ -346,11 +346,11 @@ opacity: 0.93;
     .hero-subtitle {
       font-size: 2.2vh;
     }
-    .cta-buttons {
+    .about-author-button{
       flex-direction: column;
       gap: 2vh;
     }
-    .cta-button {
+    .explore-button {
       padding: 1.5vh 2vw;
       width: 100%;
     }
@@ -431,7 +431,7 @@ opacity: 0.93;
     .hero-subtitle {
       font-size: 2.5vh;
     }
-    .cta-button {
+    .explore-button {
       padding: 1.8vh 3vw;
     }
     .about_container {
@@ -506,7 +506,7 @@ opacity: 0.93;
     .hero-subtitle {
       font-size: 3vh;
     }
-    .cta-button {
+    .explore-button{
       padding: 2vh 4vw;
     }
     .about_container {
