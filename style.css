@@ -109,6 +109,9 @@ body {
     max-width: 800px;
     z-index: 2;
 }
+.image-container img{
+  width:100%;border-radius:20px
+}
 
 .hero-title {
     font-size: 6vh;
