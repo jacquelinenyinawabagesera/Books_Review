@@ -2,29 +2,190 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Books</title>
-    <link rel="stylesheet" href="books.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
+    <!-- <link rel="stylesheet" href="books.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <style>
+        @font-face {
+            font-family: poppins;
+            src: url(poppins/Poppins-Regular.ttf);
+        }
+
+        body {
+            font-family: poppins, sans-serif;
+            overflow-x: hidden; 
+            margin: 0;
+            background-color: #fff;
+        }
+
+        .books {
+            background-image: url(images/background1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            padding: 2rem 1rem; 
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .two-books {
+            display: flex;
+            gap: 10vw;
+            justify-content: center;
+            flex-wrap: wrap; 
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto 3rem auto;
+            box-sizing: border-box;
+        }
+
+        .book-one,
+        .book-two {
+            font-size: 1.5rem;
+            line-height: 1.2;
+            text-align: center;
+            flex: 1 1 300px; 
+            max-width: 400px;
+            box-sizing: border-box;
+            color: #000;
+        }
+        .book-one p,
+        .book-two p {
+            margin: 0.5rem 0;
+        }
+
+        .book-one img,
+        .book-two img {
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+            border-radius: 0.8rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease-in-out;
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .book-one img:hover,
+        .book-two img:hover {
+            transform: scale(1.1);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 4rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 80%;
+            height: 10vh;
+            /* max-width: 50vh; */
+            margin: 0 auto 2rem auto;
+            box-sizing: border-box;
+        }
+
+        .buttons a {
+            position: relative;
+            color: black;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border: none;
+            background-color: rgba(190, 92, 92, 0.82);
+            padding: 1rem 3rem;
+            border-radius: 20px;
+            box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            text-align: center;
+            flex: 1 1 150px;
+            max-width: 150px;
+            margin-top: 10vh;
+            height: 5vh;
+        }
+
+        .buttons a:hover {
+            background-color: rgba(190, 92, 92, 1);
+            color: white;
+        }
+
+        @media (max-width: 900px) {
+            .two-books {
+                gap: 5vw;
+            }
+
+            .book-one,
+            .book-two {
+                max-width: 350px;
+                font-size: 1.3rem;
+            }
+
+            .buttons {
+                gap: 2rem;
+            }
+
+            .buttons a {
+                font-size: 1rem;
+                padding: 0.6rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .two-books {
+                flex-direction: column;
+                gap: 2rem;
+                margin-left: 0;
+                padding: 0 1rem;
+            }
+
+            .book-one,
+            .book-two {
+                max-width: 100%;
+                font-size: 1.1rem;
+            }
+
+            .book-one img,
+            .book-two img {
+                max-height: 50vh;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 1rem;
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .buttons a {
+                max-width: 100%;
+                flex: none;
+                font-size: 1.1rem;
+                padding: 0.75rem 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
     <div class="books">
         <div class="two-books">
             <div class="book-one">
-                <a href="bornacrime.html"> <img src="./images/book1.jpg"> </a>
+                <a href="bornacrime.html"><img src="./images/book1.jpg" alt="Born a Crime book cover" /></a>
                 <p>Born a Crime</p>
                 <p>by Trevor Noah</p>
-
             </div>
 
             <div class="book-two">
-
-                <a href="beneath_the _lion's_gaze.html"><img src="./images/book2.jpg"> </a>
-                <p>Beneath The Lion's Gaze </p>
+                <a href="beneath_the_lion's_gaze.html"><img src="./images/book2.jpg" alt="Beneath The Lion's Gaze book cover" /></a>
+                <p>Beneath The Lion's Gaze</p>
                 <p>by Maaza Mengiste</p>
             </div>
         </div>
@@ -33,12 +194,6 @@
             <a href="books.html"><b>READ</b></a>
         </div>
     </div>
-
-
-
-
-
-
 </body>
 
 </html>

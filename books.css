@@ -7,6 +7,7 @@
 body {
     font-family: poppins;
     overflow: hidden;
+    margin: 0;
 }
 
 
@@ -29,7 +30,6 @@ body {
     display: inline;
     font-size: 35px;
     line-height: 0.25;
-    text-align: center;
 
 
     p {
@@ -38,9 +38,9 @@ body {
 
 
     img {
-        height: 60vh;
+        height: 70vh;
         width: 110%;
-        margin-top: 10vh;
+        margin-top: 5vh;
         border-radius: 0.8rem;
         margin-bottom: 5%;
         transition: transform 0.3s ease-in-out;
@@ -73,8 +73,8 @@ body {
 
     img {
         width: 110%;
-        height: 60vh;
-        margin-top: 10vh;
+        height: 70vh;
+        margin-top: 5vh;
         border-radius: 0.8rem;
         margin-bottom: 5%;
         transition: transform 0.3s ease-in-out;
@@ -102,7 +102,7 @@ body {
 
     display: flex;
     margin-left: 35vw;
-    margin-top: 2%;
+    /* margin-top: 2%; */
     gap: 13vw;
 }
 
